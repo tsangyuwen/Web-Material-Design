@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.name h1{
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.name{
+    padding-top: 48px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 24px;
+    margin-bottom: 48px;
+}
+
+.photo{
+    width: 324px;
+    height: 324px;
+    display: block;
+    margin-bottom: 48px;
+}
+
+ul.experience li{
+    position: relative;
+    display: flex;
+    padding-bottom: 32px;
+}
+
+ul.experience li:before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #96A9C4;
+    margin: 8px 16px;
+    display: block;
+}
+
+ul.experience li:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+}
+
+ul.experience li:first-child::after{
+    top: 24px;
+}
+
+ul.experience li:last-child::after{
+    height: 8px;
+}
+
+ul.experience li:only-child::after{
+    height: 0px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.profile, .education{
+    padding-bottom: 16px;
+}
+
+.red{
+    color: #A00404;
+}
+
+.title h3{
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.title h4{
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 16px;
+}
+
+.profile hr, .education hr{
+    margin-bottom: 16px;
+}
+
+.experience p{
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 24px;
+}
+
+.background{
+    background: #96A9C4;
+    height: 360px;
+    margin-top: 67px;
+    margin-bottom: 67px;
+}
+
+.dark{
+    background: #415165;
+    color: #FFFFFF;
+    height: 494px;
+    margin-top: -494px;
+}
+
+.skill-wrap, .contact{
+    width: 996px;
+    padding-top: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-wrap hr{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+ul.line-list li{
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+ul.line-list li:before{
+    content: "";
+    border-left: 1px solid #96A9C4;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    margin-left: -24px;
+}
+
+ul.line-list li:first-child::before{
+    margin-top: 8px;
+}
+
+ul.skill-list li:last-child::before{
+    height: 36px;
+}
+
+.skills{
+    padding-bottom: 72px;
+}
+
+.work-experience hr{
+    margin-bottom: 22px;
+}
+
+ul.work-experience-list li{
+    padding-bottom: 32px;
+    padding-left: 48px;
+}
+
+ul.work-experience-list li h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+ul.work-experience-list li p{
+    font-size: 20px;
+    line-height: 30px;
+    width: 642px;
+}
+
+ul.work-experience-list li img{
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+ul.work-experience-list li:last-child::before{
+    height: 154px;
+}
+
+.work-experience{
+    padding-bottom: 72px;
+}
+
+.footer{
+    background: #415165;
+    color: #ffffff;
+    padding-top: 24px;
+}
+
+.contact{
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.contact hr{
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+ul.contact-list li{
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.contact-icons img{
+    margin: 0px 12px;
+}
