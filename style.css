@@ -185,12 +185,8 @@ ul.line-list li:before{
     margin-left: -24px;
 }
 
-ul.line-list li:first-child::before{
-    margin-top: 8px;
-}
-
 ul.skill-list li:last-child::before{
-    height: 36px;
+    bottom: 16px;
 }
 
 .skills{
@@ -225,7 +221,7 @@ ul.work-experience-list li img{
 }
 
 ul.work-experience-list li:last-child::before{
-    height: 154px;
+    bottom: 32px;
 }
 
 .work-experience{
