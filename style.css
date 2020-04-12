@@ -238,7 +238,7 @@ ul.work-experience-list li:last-child::before{
 
 .contact{
     width: 100%;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
 }
 
 .contact hr{
