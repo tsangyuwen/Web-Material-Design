@@ -1,0 +1,14 @@
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url('images/photo-1552393700-42696fb89bfa.png');
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
