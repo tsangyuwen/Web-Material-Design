@@ -1,14 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Microsoft JhengHei", Times, serif;
+}
+
 .wrap{
     width: 1920px;
     margin: 0 auto;
 }
 
 .header{
-    background-image: url('images/photo-1552393700-42696fb89bfa.png');
+    background: transparent url('images/photo-1552393700-42696fb89bfa.png') 0% 0% no-repeat padding-box;
     height: 960px;
+    color: #FFFFFF;
+    border: 1px solid #707070;
+    padding-top: 348px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 56px;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 42px;
+    font-style: italic;
+}
+
+h6{
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.title{
+    margin-bottom: 27px;
+}
+
+.title h1{
+    margin-top: -21px;
+}
+
+.description{
+    margin-bottom: 63px;
+}
+
+.social-icon{
+    display: flex;
+}
+
+.social-icon li{
+    padding: 0px 8px;
+}
+
+.content{
+    text-align: center;
+}
+
+.about h2{
+    margin-bottom: 39px;
+}
+
+.about img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.about hr{
+    width: 384px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.experience li{
+    position: relative;
+}
+
+.experience h5:before{
+    content: "";
+    background: #891818;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -32px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.brand{
+    background: #000000;
+    border: 1px solid #707070;
     color: #FFFFFF;
+    padding-top: 56px;
+    padding-bottom: 120px;
+    margin-bottom: 56px;
+}
+
+.brand h2{
+    margin-bottom: 7px;
+}
+
+.brand h5{
+    margin-bottom: 19px;
+}
+
+.brand h6, .other-works h6{
+    margin-bottom: 41px;
+}
+
+.brand-images, .works{
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.brand-images img{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.other-works h2{
+    margin-bottom: 16px;
+}
+
+.other-works{
+    background: transparent url('images/photo-1561291386-5be50364cfb5.png') 0% 0% no-repeat padding-box;
+    background-position-y: 320px;
+    padding-bottom: 104px;
+}
+
+.works{
+    color: #FFFFFF;
+}
+
+.works li{
+    margin-bottom: 8px;
+}
+
+.works img{
+    margin-bottom: 9px;
+}
+
+.footer{
+    background: #000000;
+    color: #ffffff;
+    height: 317px;
+    padding-bottom: 67px;
+    padding-top: 56px;
+    text-align: center;
+}
+
+.footer h2{
+    margin-bottom: 14px;
+}
+
+.footer h5{
+    margin-bottom: 13px;
 }
